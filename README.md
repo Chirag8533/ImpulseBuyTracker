@@ -28,3 +28,6 @@ The goal of this project is to promote mindful spending by helping users reflect
 - Add data visualization (charts)
 - Monthly spending analysis
 - User authentication and backend integration
+
+##LIVE PROJECT LINK
+https://chirag8533.github.io/ImpulseBuyTracker/
