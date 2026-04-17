@@ -29,5 +29,14 @@ The goal of this project is to promote mindful spending by helping users reflect
 - Monthly spending analysis
 - User authentication and backend integration
 
+  ##PROJECT LOOK AND FEEL
+  Simple UI look
+  <img width="2940" height="1912" alt="image" src="https://github.com/user-attachments/assets/d5d25f36-93d8-4acc-803d-ae76d1eed526" />
+  How it look after adding product
+  <img width="2940" height="1912" alt="image" src="https://github.com/user-attachments/assets/e16b88d4-07be-4300-a1b6-f6c8c2f88b06" />
+
+  
+
+
 ##LIVE PROJECT LINK
 https://chirag8533.github.io/ImpulseBuyTracker/
