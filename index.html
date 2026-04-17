@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Impulse Buy Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Impulse<span>Buy</span> Tracker</h1>
+    <p>Log it. Judge it. Learn from it.</p>
+  </header>
+
+  <div class="stats">
+    <div class="stat s1"><div class="lbl">Total Spent</div><div class="val" id="sTotal">₹0</div></div>
+    <div class="stat s2"><div class="lbl">Regret Rate</div><div class="val" id="sRegret">0%</div></div>
+    <div class="stat s3"><div class="lbl">Items Logged</div><div class="val" id="sCount">0</div></div>
+  </div>
+
+  <div class="form-box">
+    <h2>Log a Purchase</h2>
+    <div class="grid3">
+      <div class="field"><label>Item Name</label><input id="iName" placeholder="e.g. Wireless earbuds"></div>
+      <div class="field"><label>Amount (₹)</label><input id="iAmt" type="number" placeholder="999"></div>
+      <div class="field"><label>Category</label>
+        <select id="iCat">
+          <option>Electronics</option>
+          <option>Food</option>
+          <option>Clothes</option>
+          <option>Gaming</option>
+          <option>Books</option>
+          <option>Other</option>
+        </select>
+      </div>
+    </div>
+    <div class="grid2">
+      <div class="field"><label>Feeling</label>
+        <select id="iMood">
+          <option value="unsure">Not sure yet</option>
+          <option value="fine">Worth it</option>
+          <option value="regret">Total regret</option>
+        </select>
+      </div>
+      <div class="field"><label>Date</label><input id="iDate" type="date"></div>
+    </div>
+    <button class="btn-add" onclick="addItem()">+ Log Purchase</button>
+  </div>
+
+  <div class="list-box">
+    <div class="list-top">
+      <h2>History</h2>
+      <div class="filters">
+        <button class="ftab active" onclick="filter('all',this)">All</button>
+        <button class="ftab" onclick="filter('regret',this)">Regrets</button>
+        <button class="ftab" onclick="filter('fine',this)">Worth it</button>
+        <button class="ftab" onclick="filter('unsure',this)">Unsure</button>
+      </div>
+    </div>
+    <div id="list"></div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
